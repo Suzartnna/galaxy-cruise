@@ -1,0 +1,282 @@
+body {
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container-inner {
+    position: relative;
+    height: 0;
+    border: none;
+}
+
+.container-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/background.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container-padding {
+    padding-top: 265%;
+}
+
+.title {
+    position: absolute;
+    top: 1%;
+    width: 30%;
+    left: calc(50vw - 18%);
+}
+
+.planet {
+    position: absolute;
+    width: 25%;
+    height: 8%;
+}
+
+.planet-description {
+    position: absolute;
+    height: auto;
+    width: 15%;
+    opacity: 0;
+    transition: opacity 0.8s linear;
+}
+
+.planet1 {
+    top: 15%;
+    left: 36%;
+}
+
+.planet1-description {
+    top: 22.2%;
+    left: 42%;
+}
+
+.planet2 {
+    top: 24%;
+    left: 11%;
+    width: 23%;
+}
+
+.planet2-description {
+    top: 30.2%;
+    left: 16.1%;
+}
+
+.planet3 {
+    top: 23.7%;
+    left: 65%;
+    width: 20%;
+}
+
+.planet3-description {
+    top: 30.2%;
+    left: 68.1%;
+}
+
+.planet4 {
+    top: 33.5%;
+    left: 37%;
+    width: 27.3%;
+}
+
+.planet4-description {
+    top: 40.2%;
+    left: 43.1%;
+}
+
+.planet5 {
+    top: 41.5%;
+    left: 4%;
+    width: 28%;
+    height: 12%;
+}
+
+.planet5-description {
+    top: 51.2%;
+    left: 14.1%;
+}
+
+.planet6 {
+    top: 40.5%;
+    left: 64%;
+    width: 35%;
+    height: 14%;
+}
+
+.planet6-description {
+    top: 51.6%;
+    left: 71.1%;
+}
+
+.planet7 {
+    top: 52.5%;
+    left: 22%;
+    width: 60%;
+    height: 14%;
+}
+
+.planet7-description {
+    top: 64%;
+    left: 43.1%;
+}
+
+.planet8 {
+    top: 65%;
+    left: -1%;
+    width: 38%;
+    height: 14%;
+}
+
+.planet8-description {
+    top: 75%;
+    left: 14.1%;
+}
+
+.planet9 {
+    top: 62%;
+    left: 64%;
+    width: 38%;
+    height: 17%;
+}
+
+.planet9-description {
+    top: 75%;
+    left: 72.6%;
+}
+
+.planet10 {
+    top: 75%;
+    left: 30%;
+    width: 38%;
+    height: 14%;
+}
+
+.planet10-description {
+    top: 86%;
+    left: 42.6%;
+}
+
+.planet-container:hover .planet-description{
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+.star {
+    position: absolute;
+}
+
+.star1 {
+    animation: star1 4s infinite linear;
+}
+.star2 {
+    animation: star2 3s infinite linear;
+}
+.star3 {
+    animation: star3 4s infinite linear;
+}
+.star4 {
+    animation: star4 3s infinite linear;
+}
+.star5 {
+    animation: star5 4s infinite linear;
+}
+.star6 {
+    animation: star6 3s infinite linear;
+}
+.star7 {
+    animation: star7 4s infinite linear;
+}
+.star8 {
+    animation: star8 3s infinite linear;
+}
+
+@keyframes star1 {
+    0% {top: 0%; left: 100%;}
+    100% {top: 65%; left: -10%;}
+}
+@keyframes star2 {
+    0% {top: -10%; left: 50%;}
+    100% {top: 55%; left: -60%;}
+}
+@keyframes star3 {
+    0% {top: -10%; left: 25%;}
+    100% {top: 55%; left: -75%;}
+}
+@keyframes star4 {
+    0% {top: 30%; left: 100%;}
+    100% {top: 95%; left: -10%;}
+}
+@keyframes star5 {
+    0% {top: -10%; left: 10%;}
+    100% {top: 55%; left: -100%;}
+}
+@keyframes star6 {
+    0% {top: 50%; left: 100%;}
+    100% {top: 115%; left: -10%;}
+}
+@keyframes star7 {
+    0% {top: 80%; left: 100%;}
+    100% {top: 145%; left: -10%;}
+}
+@keyframes star8 {
+    0% {top: 90%; left: 100%;}
+    100% {top: 155%; left: -10%;}
+}
+
+
+@media all and (max-width: 1024px) {
+    .title {
+        width: 38%;
+        left: calc(50vw - 21%);
+    }
+
+    .planet-description {
+        width: 20%;
+    }
+
+    .planet1-description {
+        left: 39.6%;
+    }
+    .planet2-description {
+        left: 14.1%;
+    }
+    .planet3-description {
+        left: 65.1%;
+    }
+    .planet4-description {
+        left: 40.1%;
+    }
+    .planet5-description {
+        left: 11.1%;
+    }
+    .planet6-description {
+        left: 68.1%;
+    }
+    .planet7-description {
+        left: 40.1%;
+    }
+    .planet8-description {
+        left: 11.1%;
+    }
+    .planet9-description {
+        left: 69.6%;
+    }
+    .planet10-description {
+        left: 39.6%;
+    }
+}
+
+/* @media all and (max-width: 500px) {
+    .title {
+        width: 49%;
+        left: calc(50vw - 28%);
+    }
+} */
